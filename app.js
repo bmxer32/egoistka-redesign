@@ -44,38 +44,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Tab Filtering for Massage services & Works portfolio
   const tabButtons = document.querySelectorAll('.tab-btn');
-  const massageCards = document.querySelectorAll('.massage-card');
-  const workItems = document.querySelectorAll('.work-item');
 
   tabButtons.forEach(button => {
     button.addEventListener('click', (e) => {
       e.preventDefault();
 
-      tabButtons.forEach(b => b.classList.remove('active'));
+      const container = button.closest('.container') || document;
+      container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       button.classList.add('active');
 
       const filter = button.getAttribute('data-filter');
 
       // Filter massage cards
+      const massageCards = container.querySelectorAll('.massage-card');
       if (massageCards.length > 0) {
         massageCards.forEach(card => {
           const cat = card.getAttribute('data-category');
           if (filter === 'all' || cat === filter) {
-            card.style.display = 'flex';
+            card.classList.remove('hidden');
           } else {
-            card.style.display = 'none';
+            card.classList.add('hidden');
           }
         });
       }
 
       // Filter work items
+      const workItems = container.querySelectorAll('.work-item');
       if (workItems.length > 0) {
         workItems.forEach(item => {
           const cat = item.getAttribute('data-cat');
           if (filter === 'all' || cat === filter) {
-            item.style.display = 'flex';
+            item.classList.remove('hidden');
           } else {
-            item.style.display = 'none';
+            item.classList.add('hidden');
           }
         });
       }

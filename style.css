@@ -452,6 +452,13 @@ img {
   width: 100%;
 }
 
+/* Hidden state for JS Tab Filtering */
+.service-card.hidden,
+.massage-card.hidden,
+.work-item.hidden {
+  display: none !important;
+}
+
 .service-card:hover {
   border-color: var(--border-gold);
   transform: translateY(-2px);
