@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Массаж лица и тела — Салон красоты "Эгоистка" (г. Колпино)</title>
+  <meta name="description" content="Массаж лица и тела в Колпино. Общий женский и мужской массаж, массаж спины, ШВЗ, лимфодренажный, антицеллюлитный, буккальный массаж лица, аппаратный вибрационный и вакуумный массаж, абонементы. Телефон: +7 (812) 935-45-90.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Санкт-Петербург, г. Колпино, ул. Павловская, д. 7, 1-й этаж</span>
+        </div>
+        <div class="top-bar-item">
+          <i class="far fa-clock"></i>
+          <span>Ежедневно 10:00 – 21:00</span>
+        </div>
+      </div>
+      <div class="top-bar-info">
+        <a href="tel:+78129354590" class="top-bar-item gold-text" style="font-weight: 700;">
+          <i class="fas fa-phone-alt"></i> +7 (812) 935-45-90
+        </a>
+        <div class="social-links">
+          <a href="https://vk.com/egoistka_kolpino" target="_blank" class="social-icon" title="ВКонтакте">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="https://www.instagram.com/salon_egoistcka" target="_blank" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-brand">
+        <span class="logo-title">ЭГОИСТКА</span>
+        <span class="logo-sub">САЛОН КРАСОТЫ • КОЛПИНО</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="massazh-lica-i-tela.html" class="nav-link active">Массаж</a></li>
+          <li><a href="services.html" class="nav-link">Услуги и цены</a></li>
+          <li><a href="bonusy.html" class="nav-link">Сертификаты</a></li>
+          <li><a href="nash-salon.html" class="nav-link">О салоне</a></li>
+          <li><a href="raboty.html" class="nav-link">Работы</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link">Ещё <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="brendy.html"><i class="fas fa-award"></i> Бренды косметики</a></li>
+              <li class="dropdown-item"><a href="grafik-otpuskov.html"><i class="far fa-calendar-alt"></i> График отпусков 2026</a></li>
+              <li class="dropdown-item"><a href="arenda-rabochego-mesta.html"><i class="fas fa-chair"></i> Аренда рабочего места</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-primary btn-dikidi">
+        <i class="far fa-calendar-check"></i> Записаться онлайн
+      </button>
+
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span style="color: var(--gold-light);">Массаж лица и тела</span>
+        </div>
+        <h1 class="page-title serif-title">Массаж лица и тела</h1>
+        <p class="page-subtitle">
+          Массаж лица и тела — отличный способ снять напряжение, улучшить кровообращение и повысить общий тонус организма. Ручные техники, моделирующий аппаратный массаж и СПА-уходы.
+        </p>
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <section class="section">
+      <div class="container">
+
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-tab="all">Все 25+ услуг массажа</button>
+          <button class="tab-btn" data-tab="body">Массаж тела</button>
+          <button class="tab-btn" data-tab="face">Массаж лица</button>
+          <button class="tab-btn" data-tab="hardware">Аппаратный массаж</button>
+          <button class="tab-btn" data-tab="mix">Массаж МИКС</button>
+          <button class="tab-btn" data-tab="spa">СПА и Обертывания</button>
+          <button class="tab-btn" data-tab="kids">Детский массаж</button>
+        </div>
+
+        <div class="services-grid massage-services">
+          
+          <!-- Body Massages -->
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж общий женский</h3>
+              <span class="service-badge">60–90 мин</span>
+            </div>
+            <p class="service-desc">Полный прорабатывающий оздоровительный массаж мышц всего тела. Устраняет усталость, нормализует лимфоток и дает прилив сил.</p>
+            <div class="service-footer">
+              <span class="service-price">от 2 500 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж общий мужской</h3>
+              <span class="service-badge">60–90 мин</span>
+            </div>
+            <p class="service-desc">Силовая проработка глубоких мышечных слоев, снятие зажимов в воротниковой и поясничной зонах после тренировок и работы.</p>
+            <div class="service-footer">
+              <span class="service-price">от 3 000 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж спины женский / мужской</h3>
+              <span class="service-badge">45 мин</span>
+            </div>
+            <p class="service-desc">Прицельное снятие напряжения с грудного, шейного и поясничного отделов позвоночника.</p>
+            <div class="service-footer">
+              <span class="service-price">от 1 800 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж ШВЗ (шейно-воротниковая зона)</h3>
+              <span class="service-badge">30 мин</span>
+            </div>
+            <p class="service-desc">Быстрая помощь при головных болях, спазмах в шее и плечах. Рекомендуется при офисной работе.</p>
+            <div class="service-footer">
+              <span class="service-price">1 400 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж лимфодренажный</h3>
+              <span class="service-badge">60 мин</span>
+            </div>
+            <p class="service-desc">Мягкие лимфодренажные пассажи для активного выведения жидкости из тканей и снятия тяжести в ногах.</p>
+            <div class="service-footer">
+              <span class="service-price">2 600 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж антицеллюлитный</h3>
+              <span class="service-badge">60 мин</span>
+            </div>
+            <p class="service-desc">Интенсивная ручная техника для разрушения жировых капсул, подтяжки кожи и гладкого рельефа бедер и ягодиц.</p>
+            <div class="service-footer">
+              <span class="service-price">2 800 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Релакс массаж</h3>
+              <span class="service-badge">60 мин</span>
+            </div>
+            <p class="service-desc">Аромтерапевтический расслабляющий массаж с натуральными теплыми маслами для полного погружения в умиротворение.</p>
+            <div class="service-footer">
+              <span class="service-price">2 500 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Баночный массаж</h3>
+              <span class="service-badge">45 мин</span>
+            </div>
+            <p class="service-desc">Вакуумная баночная проработка тканей для глубокой гиперемии, ускорения регенерации и тонуса.</p>
+            <div class="service-footer">
+              <span class="service-price">2 200 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Медовый массаж</h3>
+              <span class="service-badge">45 мин</span>
+            </div>
+            <p class="service-desc">Питательный очищающий массаж натуральным медом. Мощный пилинг-эффект и укрепление кожи.</p>
+            <div class="service-footer">
+              <span class="service-price">2 400 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж головы / Массаж рук / Массаж ног / Стоп</h3>
+              <span class="service-badge">30 мин</span>
+            </div>
+            <p class="service-desc">Локальная глубокая точечная проработка кистей, стоп, головы или ног для снятия усталости.</p>
+            <div class="service-footer">
+              <span class="service-price">от 1 200 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Массаж Тайский / Спортивный</h3>
+              <span class="service-badge">60–90 мин</span>
+            </div>
+            <p class="service-desc">Глубокие растяжки, скрутки и акупрессура для восстановления эластичности связок и мышц.</p>
+            <div class="service-footer">
+              <span class="service-price">от 3 200 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="body">
+            <div class="service-header">
+              <h3 class="service-name">Полная проработка всего тела</h3>
+              <span class="service-badge">90–120 мин</span>
+            </div>
+            <p class="service-desc">Максимальный комбо-сет: массаж от кончиков пальцев ног до макушки головы.</p>
+            <div class="service-footer">
+              <span class="service-price">4 200 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <!-- Face Massages -->
+          <div class="service-card" data-category="face">
+            <div class="service-header">
+              <h3 class="service-name">Массаж лица классический</h3>
+              <span class="service-badge">40 мин</span>
+            </div>
+            <p class="service-desc">Стимуляция микроциркуляции, подтяжка овала лица, придание коже упругости и свежести.</p>
+            <div class="service-footer">
+              <span class="service-price">1 800 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="face">
+            <div class="service-header">
+              <h3 class="service-name">Буккальный массаж лица</h3>
+              <span class="service-badge">50 мин</span>
+            </div>
+            <p class="service-desc">Инновационный скульптурирующий массаж мимических мышц через ротовую полость для естественного лифтинга.</p>
+            <div class="service-footer">
+              <span class="service-price">2 600 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="face">
+            <div class="service-header">
+              <h3 class="service-name">Массаж живота</h3>
+              <span class="service-badge">30 мин</span>
+            </div>
+            <p class="service-desc">Улучшение тонуса брюшной стенки, моторики и уменьшение локальных объемов.</p>
+            <div class="service-footer">
+              <span class="service-price">1 500 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <!-- Hardware Massages -->
+          <div class="service-card" data-category="hardware">
+            <div class="service-header">
+              <h3 class="service-name">Вибрационный массаж (1 процедура)</h3>
+              <span class="service-badge">Аппаратный</span>
+            </div>
+            <p class="service-desc">Полноценная процедура вибрационного массажа для разрушения жировых капсул.</p>
+            <div class="service-footer">
+              <span class="service-price">1 900 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="hardware">
+            <div class="service-header">
+              <h3 class="service-name">АБОНЕМЕНТ (вибрационный массаж) 5 сеансов</h3>
+              <span class="service-badge">Абонемент</span>
+            </div>
+            <p class="service-desc">Курс их 5 процедур вибрационного массажа со скидкой.</p>
+            <div class="service-footer">
+              <span class="service-price">7 500 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="hardware">
+            <div class="service-header">
+              <h3 class="service-name">АБОНЕМЕНТ (вибрационный массаж) 10 сеансов</h3>
+              <span class="service-badge">Курс 10</span>
+            </div>
+            <p class="service-desc">Полный курс коррекции фигуры вибрационным методом.</p>
+            <div class="service-footer">
+              <span class="service-price">13 500 ₽</span>
+              <button class="btn-primary btn-dikidi">Записаться</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo-title serif-title" style="margin-bottom: 12px;">ЭГОИСТКА</div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; margin-bottom: 20px;">
+            Салон красоты в Колпино. Профессиональный массаж лица и тела, парикмахерские услуги, косметология и эстетический уход.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--gold-light);">
+            📍 г. Колпино, ул. Павловская, д. 7<br>
+            📞 +7 (812) 935-45-90
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Разделы сайта</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="massazh-lica-i-tela.html">Массаж лица и тела</a></li>
+            <li><a href="services.html">Услуги и цены</a></li>
+            <li><a href="bonusy.html">Подарочные сертификаты</a></li>
+            <li><a href="nash-salon.html">О салоне</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Клиентам и партнерам</h4>
+          <ul class="footer-links">
+            <li><a href="raboty.html">Работы мастеров</a></li>
+            <li><a href="brendy.html">Бренды косметики</a></li>
+            <li><a href="grafik-otpuskov.html">График отпусков 2026</a></li>
+            <li><a href="arenda-rabochego-mesta.html">Аренда рабочего места</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Онлайн-запись</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Запишитесь на удобное время через систему DIKIDI.</p>
+          <button class="btn-primary btn-dikidi" style="width: 100%; justify-content: center;"><i class="far fa-calendar-check"></i> Записаться в DIKIDI</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Салон красоты «Эгоистка». Все права защищены.</div>
+        <div>г. Колпино, ул. Павловская, д. 7</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="floating-booking btn-dikidi"><i class="far fa-calendar-check"></i> Записаться онлайн</button>
+
+  <div id="dikidiModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="serif-title gold-text" style="font-size: 1.4rem;">Онлайн-запись в салон «Эгоистка»</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="dikidiIframe" src="https://dikidi.net/#widget=51285" title="DIKIDI Booking Widget"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
